@@ -13,9 +13,5 @@ extension InitialViewController: ArchiViewProtocol {
     
     func showInicialMessage(initialMessage message: String) {
         messageLabel.text = message
-        print(message)
-
     }
-    
-    
 }
