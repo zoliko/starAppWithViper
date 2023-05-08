@@ -13,6 +13,14 @@
 		021327612A0981BF004F5D7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0213275F2A0981BF004F5D7B /* Main.storyboard */; };
 		021327632A0981C1004F5D7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 021327622A0981C1004F5D7B /* Assets.xcassets */; };
 		021327662A0981C1004F5D7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 021327642A0981C1004F5D7B /* LaunchScreen.storyboard */; };
+		0213277D2A098216004F5D7B /* ArchiPresenterExViper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021327712A098216004F5D7B /* ArchiPresenterExViper.swift */; };
+		0213277E2A098216004F5D7B /* ArchiPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021327722A098216004F5D7B /* ArchiPresenter.swift */; };
+		0213277F2A098216004F5D7B /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021327742A098216004F5D7B /* InitialViewController.swift */; };
+		021327802A098216004F5D7B /* InitialViewControllerExViper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021327752A098216004F5D7B /* InitialViewControllerExViper.swift */; };
+		021327812A098216004F5D7B /* ArchiViperProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021327772A098216004F5D7B /* ArchiViperProtocols.swift */; };
+		021327822A098216004F5D7B /* ArchiInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021327792A098216004F5D7B /* ArchiInteractor.swift */; };
+		021327832A098216004F5D7B /* ArchiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0213277B2A098216004F5D7B /* ArchiRouter.swift */; };
+		021327842A098216004F5D7B /* ArchiRouterExFuncionalities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0213277C2A098216004F5D7B /* ArchiRouterExFuncionalities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		021327622A0981C1004F5D7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		021327652A0981C1004F5D7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		021327672A0981C1004F5D7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		021327712A098216004F5D7B /* ArchiPresenterExViper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiPresenterExViper.swift; sourceTree = "<group>"; };
+		021327722A098216004F5D7B /* ArchiPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiPresenter.swift; sourceTree = "<group>"; };
+		021327742A098216004F5D7B /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		021327752A098216004F5D7B /* InitialViewControllerExViper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewControllerExViper.swift; sourceTree = "<group>"; };
+		021327772A098216004F5D7B /* ArchiViperProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiViperProtocols.swift; sourceTree = "<group>"; };
+		021327792A098216004F5D7B /* ArchiInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiInteractor.swift; sourceTree = "<group>"; };
+		0213277B2A098216004F5D7B /* ArchiRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiRouter.swift; sourceTree = "<group>"; };
+		0213277C2A098216004F5D7B /* ArchiRouterExFuncionalities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiRouterExFuncionalities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +79,80 @@
 				021327622A0981C1004F5D7B /* Assets.xcassets */,
 				021327642A0981C1004F5D7B /* LaunchScreen.storyboard */,
 				021327672A0981C1004F5D7B /* Info.plist */,
+				0213276D2A0981C8004F5D7B /* Modules */,
 			);
 			path = starAppWithViper;
+			sourceTree = "<group>";
+		};
+		0213276D2A0981C8004F5D7B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0213276E2A098216004F5D7B /* Archicture */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0213276E2A098216004F5D7B /* Archicture */ = {
+			isa = PBXGroup;
+			children = (
+				0213276F2A098216004F5D7B /* Entity */,
+				021327702A098216004F5D7B /* Presenter */,
+				021327732A098216004F5D7B /* View */,
+				021327762A098216004F5D7B /* Protocols */,
+				021327782A098216004F5D7B /* Interactor */,
+				0213277A2A098216004F5D7B /* Router */,
+			);
+			path = Archicture;
+			sourceTree = "<group>";
+		};
+		0213276F2A098216004F5D7B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		021327702A098216004F5D7B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				021327712A098216004F5D7B /* ArchiPresenterExViper.swift */,
+				021327722A098216004F5D7B /* ArchiPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		021327732A098216004F5D7B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				021327742A098216004F5D7B /* InitialViewController.swift */,
+				021327752A098216004F5D7B /* InitialViewControllerExViper.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		021327762A098216004F5D7B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				021327772A098216004F5D7B /* ArchiViperProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		021327782A098216004F5D7B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				021327792A098216004F5D7B /* ArchiInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0213277A2A098216004F5D7B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0213277B2A098216004F5D7B /* ArchiRouter.swift */,
+				0213277C2A098216004F5D7B /* ArchiRouterExFuncionalities.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +226,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0213277E2A098216004F5D7B /* ArchiPresenter.swift in Sources */,
+				021327802A098216004F5D7B /* InitialViewControllerExViper.swift in Sources */,
+				021327832A098216004F5D7B /* ArchiRouter.swift in Sources */,
+				0213277D2A098216004F5D7B /* ArchiPresenterExViper.swift in Sources */,
 				0213275E2A0981BF004F5D7B /* ViewController.swift in Sources */,
+				0213277F2A098216004F5D7B /* InitialViewController.swift in Sources */,
 				0213275A2A0981BF004F5D7B /* AppDelegate.swift in Sources */,
+				021327842A098216004F5D7B /* ArchiRouterExFuncionalities.swift in Sources */,
+				021327822A098216004F5D7B /* ArchiInteractor.swift in Sources */,
+				021327812A098216004F5D7B /* ArchiViperProtocols.swift in Sources */,
 				0213275C2A0981BF004F5D7B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
