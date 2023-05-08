@@ -11,7 +11,10 @@ typealias ArchiPresenterProtocols = ArchiPresenterProtocol & ArchiInteractorOutP
 public final class ArchiRouter: ArchiRouterProtocol {
 
     public static func createModule() -> UIViewController {
-        let view =  ViewController()
+        
+        guard let view = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "InitialViewControllerID")  as? InitialViewController
+        else { return UIViewController() }
+        
         let presenter: ArchiPresenterProtocols  = ArchiPresenter()
         view.presenter = presenter
         view.presenter?.view = view

@@ -1,5 +1,5 @@
 //
-//  ViewControllerExViper.swift
+//  InitialViewControllerExViper.swift
 //  pinino
 //
 //  Created by Marcelo Aguilar Bravo on 08/05/23.
@@ -12,7 +12,8 @@ extension InitialViewController: ArchiViewProtocol {
     //Module`s Funcionalities
     
     func showInicialMessage(initialMessage message: String) {
-        messageLabel.text = message
+        //messageLabel.text = message
+        print(message)
     }
     
     
